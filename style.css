@@ -13,24 +13,35 @@ header {
   background-color: rgb(151, 169, 231);
   display: flex;
   padding: 25px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border: solid 3px black;
 }
 
-.navigation-box {
-  list-style: none;
-  padding: 1em;
-  background-color: rgb(207, 255, 255);
+.header-text {
+  font-size: 1.245em;
 }
 
-a {
+ul {
+  display: flex;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 900;
   text-decoration: none;
   margin: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 0.1em 1em;
+  scale: 1;
+  background-image: linear-gradient(to left, #f47a00, #d9ff00);
 }
 
-a:hover,
-a:focus {
-  color: red;
-  text-decoration: underline;
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(255, 0, 0);
+  scale: 1.05;
 }
